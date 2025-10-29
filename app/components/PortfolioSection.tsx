@@ -64,11 +64,11 @@ export default function PortfolioSection() {
 
   return (
     <section id="portfolio" className="min-h-screen px-3 py-6 lg:p-0 lg:mb-16">
-      <div className="w-full bg-[#111111]/95 backdrop-blur-sm rounded-2xl p-6 lg:p-12 border border-gray-800/50">
+      <div className="w-full bg-[#111111]/95 backdrop-blur-sm p-6 lg:p-12 border border-gray-800/50">
         <div className="mb-6">
           <span className="text-[#8cc63f] font-semibold text-sm uppercase tracking-wider">Projects</span>
         </div>
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">Portfolio</h2>
+        <h2 className="text-4xl lg:text-5xl font-medium text-white mb-8">Portfolio</h2>
         
         {/* Filter Buttons */}
         <div className="flex flex-wrap gap-3 mb-12">
@@ -76,7 +76,7 @@ export default function PortfolioSection() {
             <button
               key={cat.id}
               onClick={() => setFilter(cat.id)}
-              className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+              className={`px-6 py-3  font-medium transition-all duration-300 ${
                 filter === cat.id
                   ? 'bg-[#8cc63f] text-white shadow-lg shadow-[#8cc63f]/30'
                   : 'bg-[#1a1a1a] text-gray-400 hover:text-white hover:bg-gray-800 border border-gray-800'
@@ -92,7 +92,7 @@ export default function PortfolioSection() {
           {filteredProjects.map((project, index) => (
             <div
               key={index}
-              className="group relative bg-[#1a1a1a] rounded-xl overflow-hidden border border-gray-800/50 hover:border-gray-700 transition-all duration-300 hover:shadow-2xl hover:shadow-[#8cc63f]/20 cursor-pointer"
+              className="group relative bg-[#1a1a1a]  overflow-hidden border border-gray-800/50 hover:border-gray-700 transition-all duration-300 hover:shadow-2xl hover:shadow-[#8cc63f]/20 cursor-pointer"
             >
               {/* Image/Gradient Background */}
               <div className={`h-56 bg-gradient-to-br ${project.image} opacity-80 group-hover:opacity-100 transition-all duration-300 relative overflow-hidden`}>
@@ -112,7 +112,7 @@ export default function PortfolioSection() {
                 <span className="text-xs text-[#8cc63f] font-semibold uppercase tracking-wider">
                   {project.category}
                 </span>
-                <h3 className="text-xl font-bold text-white mt-2 mb-3 group-hover:text-[#8cc63f] transition-all">
+                <h3 className="text-lg font-medium text-white mt-2 mb-3 group-hover:text-[#8cc63f] transition-all">
                   {project.title}
                 </h3>
                 <p className="text-gray-400 mb-4 text-sm leading-relaxed">

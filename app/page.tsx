@@ -33,18 +33,14 @@ export default function Home() {
       />
 
       {/* Desktop Three Column Layout with Margins */}
-      <div className="hidden lg:flex min-h-screen">
-        {/* Left: Icon Navigation - Fixed */}
+      <div className="hidden lg:flex h-screen">
         <Sidebar activeSection={activeSection} onNavigate={scrollToSection} />
         
-        {/* Main Container with Left/Right Margins */}
-        <div className="flex-1 ml-28">
-          <div className="max-w-[1400px] mx-auto px-8 xl:px-16 flex gap-8 xl:gap-12">
-            {/* Center: Profile Card - Fixed */}
-            <AboutSection onNavigate={scrollToSection} />
-            
-            {/* Right: Main Content - Scrollable */}
-            <main className="flex-1 py-12 max-h-screen overflow-y-auto">
+        <div className="flex-1 ml-20 flex">
+          <AboutSection onNavigate={scrollToSection} />
+          
+          <div className="flex-1 ml-6 overflow-y-auto">
+            <main className="max-w-6xl mx-auto p-12">
               {/* Hero Content (replaces About section) */}
               <HeroContent />
               
@@ -55,7 +51,7 @@ export default function Home() {
               <ContactSection />
 
               {/* Footer */}
-              <footer className="bg-[#111111]/95 backdrop-blur-sm rounded-2xl border border-gray-800/50 py-8 mt-12 px-6">
+              <footer className="bg-[#111111]/95 backdrop-blur-sm border border-gray-800/50 py-8 mt-12 px-6">
                 <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                   <p className="text-gray-400 text-sm">
                     © {new Date().getFullYear()} Nicolas Cava. All rights reserved.
@@ -80,7 +76,7 @@ export default function Home() {
         <ContactSection />
 
         {/* Footer */}
-        <footer className="bg-[#111111]/95 backdrop-blur-sm rounded-2xl border border-gray-800/50 py-8 mx-2 mt-12">
+        <footer className="bg-[#111111]/95 backdrop-blur-sm border border-gray-800/50 py-8 mx-2 mt-12">
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-gray-400 text-sm">

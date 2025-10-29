@@ -46,11 +46,11 @@ export default function BlogSection() {
 
   return (
     <section id="blog" className="min-h-screen px-3 py-6 lg:p-0 lg:mb-16">
-      <div className="w-full bg-[#111111]/95 backdrop-blur-sm rounded-2xl p-6 lg:p-12 border border-gray-800/50">
+      <div className="w-full bg-[#111111]/95 backdrop-blur-sm p-6 lg:p-12 border border-gray-800/50">
         <div className="mb-6">
           <span className="text-[#8cc63f] font-semibold text-sm uppercase tracking-wider">Insights</span>
         </div>
-        <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">Notes & Articles</h2>
+        <h2 className="text-4xl lg:text-5xl font-medium text-white mb-8">Notes & Articles</h2>
         <p className="text-gray-400 text-lg mb-12 max-w-3xl">
           Sharing experiences and insights from years of building and scaling engineering teams. 
           Practical advice for founders and technical leaders navigating startup growth.
@@ -60,7 +60,7 @@ export default function BlogSection() {
           {posts.map((post, index) => (
             <article
               key={index}
-              className="bg-[#111111] p-6 rounded-xl border border-gray-800/50 hover:border-gray-700 transition-all duration-300 cursor-pointer group hover:shadow-2xl hover:shadow-[#8cc63f]/10"
+              className="bg-[#111111] p-6  border border-gray-800/50 hover:border-gray-700 transition-all duration-300 cursor-pointer group hover:shadow-2xl hover:shadow-[#8cc63f]/10"
             >
               {/* Category Badge */}
               <span className="inline-block px-3 py-1 bg-[#8cc63f]/20 text-[#8cc63f] rounded-full text-xs font-semibold mb-4 border border-[#8cc63f]/30">
@@ -85,7 +85,7 @@ export default function BlogSection() {
               </div>
               
               {/* Title */}
-              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#8cc63f] transition-all">
+              <h3 className="text-lg font-medium text-white mb-3 group-hover:text-[#8cc63f] transition-all">
                 {post.title}
               </h3>
               

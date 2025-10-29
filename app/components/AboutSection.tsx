@@ -8,11 +8,11 @@ export default function AboutSection({ onNavigate }: AboutSectionProps) {
   return (
     <>
       {/* Desktop: Fixed Profile Card */}
-      <div className="hidden lg:block sticky top-12 h-fit w-[340px]">
-        <div className="bg-[#111111]/95 backdrop-blur-sm rounded-3xl p-8 border border-gray-800/50">
+      <div className="hidden lg:block sticky top-12 h-fit w-[390px]">
+        <div className="bg-[#111111]/95 backdrop-blur-sm p-8 border border-gray-800/50">
           {/* Profile Image */}
           <div className="mb-6">
-            <div className="w-full aspect-square rounded-2xl overflow-hidden border-4 border-gray-800/50">
+            <div className="w-full aspect-square overflow-hidden border-4 border-gray-800/50">
               <img 
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" 
                 alt="Nicolas Cava" 
@@ -23,8 +23,8 @@ export default function AboutSection({ onNavigate }: AboutSectionProps) {
 
           {/* Title */}
           <div className="text-center mb-6">
-            <p className="text-gray-400 text-xs uppercase tracking-wider mb-2">SOFTWARE ENGINEER</p>
-            <h3 className="text-xl font-bold text-white mb-1">Nicolas Cava</h3>
+            <p className="text-gray-400 text-xs uppercase tracking-wider mb-2 font-normal">SOFTWARE ENGINEER</p>
+            <h3 className="text-lg font-semibold text-white mb-1">Nicolas Cava</h3>
           </div>
 
           {/* Social Links */}
@@ -71,7 +71,7 @@ export default function AboutSection({ onNavigate }: AboutSectionProps) {
             </button>
             <button
               onClick={() => onNavigate('contact')}
-              className="w-full px-5 py-2.5 border border-gray-600 text-white text-sm rounded-full font-semibold hover:bg-[#1a1a1a] hover:border-[#8cc63f] transition-all duration-300"
+              className="w-full px-5 py-2.5 border border-gray-600 text-white text-sm font-medium hover:bg-[#1a1a1a] hover:border-[#8cc63f] transition-all duration-300"
             >
               Contact Me
             </button>
@@ -82,10 +82,10 @@ export default function AboutSection({ onNavigate }: AboutSectionProps) {
       {/* Mobile: Full Hero Section */}
       <section id="about" className="lg:hidden min-h-screen px-3 py-6 flex items-center">
         <div className="w-full">
-          <div className="bg-[#111111]/95 backdrop-blur-sm rounded-3xl p-6 border border-gray-800/50 mb-6">
+          <div className="bg-[#111111]/95 backdrop-blur-sm p-6 border border-gray-800/50 mb-6">
             {/* Profile Image */}
             <div className="mb-6">
-              <div className="w-full aspect-square rounded-2xl overflow-hidden border-4 border-gray-800/50">
+              <div className="w-full aspect-square overflow-hidden border-4 border-gray-800/50">
                 <img 
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" 
                   alt="Nicolas Cava" 
@@ -96,8 +96,8 @@ export default function AboutSection({ onNavigate }: AboutSectionProps) {
 
             {/* Title */}
             <div className="text-center mb-6">
-              <p className="text-gray-400 text-sm uppercase tracking-wider mb-2">Fractional CTO</p>
-              <h3 className="text-2xl font-bold text-white">Nicolas Cava</h3>
+              <p className="text-gray-400 text-sm uppercase tracking-wider mb-2 font-normal">Fractional CTO</p>
+              <h3 className="text-xl font-semibold text-white">Nicolas Cava</h3>
             </div>
 
             {/* Social Links */}
@@ -138,13 +138,13 @@ export default function AboutSection({ onNavigate }: AboutSectionProps) {
             <div className="space-y-2.5">
               <button
                 onClick={() => onNavigate('contact')}
-                className="w-full px-5 py-2.5 bg-[#8cc63f] text-white rounded-full text-sm font-semibold hover:shadow-xl hover:shadow-[#8cc63f]/30 transition-all duration-300 transform hover:scale-105"
+                className="w-full px-6 py-3 bg-[#8cc63f] text-white font-medium hover:shadow-xl hover:shadow-[#8cc63f]/30 transition-all duration-300"
               >
                 Download CV
               </button>
               <button
                 onClick={() => onNavigate('contact')}
-                className="w-full px-5 py-2.5 border border-gray-600 text-white rounded-full text-sm font-semibold hover:bg-[#1a1a1a] hover:border-[#8cc63f] transition-all duration-300"
+                className="w-full px-6 py-3 border border-gray-600 text-white font-medium hover:bg-[#1a1a1a] hover:border-[#8cc63f] transition-all duration-300"
               >
                 Contact Me
               </button>
@@ -152,14 +152,14 @@ export default function AboutSection({ onNavigate }: AboutSectionProps) {
           </div>
 
           {/* Mobile Content */}
-          <div className="bg-[#111111]/95 backdrop-blur-sm rounded-3xl p-6 border border-gray-800/50">
-            <p className="text-gray-400 text-sm mb-2">
-              Hello, I'm <span className="text-[#8cc63f] font-semibold">Fractional CTO</span>
+          <div className="bg-[#111111]/95 backdrop-blur-sm p-6 border border-gray-800/50">
+            <p className="text-gray-400 text-sm mb-2 font-normal">
+              Hello, I'm <span className="text-[#8cc63f] font-medium">Fractional CTO</span>
             </p>
-            <h1 className="text-xl sm:text-2xl font-bold text-white mb-4 leading-snug">
+            <h1 className="text-lg sm:text-xl font-semibold text-white mb-4 leading-snug">
               Senior Technical Leader and <span className="text-[#8cc63f]">Fractional CTO</span> Based in San Francisco Bay Area.
             </h1>
-            <p className="text-gray-300 text-sm leading-relaxed mb-6">
+            <p className="text-gray-300 text-sm font-normal leading-relaxed mb-6">
               Have worked in a variety of positions, including key developer, solution designer, and data architect. 
               Strong engineering background combined with closely working with business customers.
             </p>
@@ -168,25 +168,25 @@ export default function AboutSection({ onNavigate }: AboutSectionProps) {
             <div className="grid grid-cols-3 gap-3">
               <div>
                 <div className="mb-1">
-                  <span className="text-2xl sm:text-3xl font-bold text-white">25+</span>
+                  <span className="text-2xl sm:text-3xl font-semibold text-white">25+</span>
                 </div>
-                <p className="text-gray-400 text-[10px] leading-tight">
+                <p className="text-gray-400 text-[10px] font-normal leading-tight">
                   Completed<br />Projects
                 </p>
               </div>
               <div>
                 <div className="mb-1">
-                  <span className="text-2xl sm:text-3xl font-bold text-white">8</span>
+                  <span className="text-2xl sm:text-3xl font-semibold text-white">8</span>
                 </div>
-                <p className="text-gray-400 text-[10px] leading-tight">
+                <p className="text-gray-400 text-[10px] font-normal leading-tight">
                   Years of<br />Experience
                 </p>
               </div>
               <div>
                 <div className="mb-1">
-                  <span className="text-2xl sm:text-3xl font-bold text-white">15+</span>
+                  <span className="text-2xl sm:text-3xl font-semibold text-white">15+</span>
                 </div>
-                <p className="text-gray-400 text-[10px] leading-tight">
+                <p className="text-gray-400 text-[10px] font-normal leading-tight">
                   Awards<br />Winning
                 </p>
               </div>
